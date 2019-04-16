@@ -1,7 +1,10 @@
-
 body {
-    height:500px;
+    height: 500px;
+    background: whitesmoke;
+    position: relative;
+    min-height: 100vh;
 }
+
 .container-main {
     margin: auto;
     background-image: url('../bg.jpg');
@@ -9,12 +12,23 @@ body {
     background-position: center;
     padding: 10px;
     height: 100%;
+
 }
 
 footer {
-    background-color: azure;
+    bottom: 0;
+    width: 100%;
+    background-color: #dddddd;
+    color: rgb(105, 105, 105);
+    height: 2em;
+    text-align: right;
+    padding: 5px;
 }
 
 .container {
     margin-top: 10px;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    padding-bottom: 2.5rem;
 }
