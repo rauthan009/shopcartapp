@@ -24,7 +24,7 @@ function refreshList()
                 $('#Vendor').append(
                     `<tr>
                     <td>${todo.name}</td> 
-                    <td><button id="delete"  onclick="deleteElement(${todo.id})">Delete</button></td>
+                    <td><button id="delete" class="btn btn-danger" onclick="deleteElement(${todo.id})">Delete</button></td>
                     </tr>`
                     )
             }

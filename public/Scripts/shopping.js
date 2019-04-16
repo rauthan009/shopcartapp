@@ -9,7 +9,6 @@ $(()=>{
         (data)=>
         {
             sessionStorage.setItem("userid",data.id);
-            alert(`Welcome user: ${data.username}`);
             refreshList()
         })
     })
@@ -22,7 +21,7 @@ function refreshList()
             for(let todo of data){
                 $('#Products').append( 
                     `<tr>
-                    <td>${todo.name}</td> <td>${todo.price}</td> <td>${todo.qty}</td> <td>${todo.vendor.name}</td><td><input type='submit' value='Add' onclick='AddElement(${todo.id})'></td>
+                    <td>${todo.name}</td> <td>${todo.price}</td> <td>${todo.qty}</td> <td>${todo.vendor.name}</td><td><input type='submit' class="btn btn-success" value='+' onclick='AddElement(${todo.id})'></td>
                     </tr>`
                     )
             }

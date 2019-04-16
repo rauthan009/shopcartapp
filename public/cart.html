@@ -36,22 +36,22 @@
               </header>
             
     <div class="container">
-            <label>Name</label>
-            <input type="text" placeholder="enter your name" id="name" required>
+            <input type="text" placeholder="enter your name" class="form-control" id="name" required>
             <br>
-            <label>Email</label>
-            <input type="email" placeholder="enter your email" id="email" required>
-            <button id="login">Login</button>
+            <input type="email" placeholder="enter your email" class="form-control" id="email" required>
+            <br>
+            <button id="login" class="btn btn-primary">Login</button>
+            <br><br>
     <h3>Products in Cart:</h3>
     <br>
-    <table class="table table-hover table-bordered">
-        <thead>
+    <table class=" table table-borderless">
+        <thead class="thead-dark">
             <tr>
-                <td>NAME</td>
-                <td>PRICE</td>
-                <td>Quantity</td>
-                <td>Vendor Name</td>
-                <td>OPTION</td>
+                <th>NAME</th>
+                <th>PRICE</th>
+                <th>Quantity</th>
+                <th>Vendor Name</th>
+                <th>OPTION</th>
             </tr>
         </thead>
         <tbody id="Products">

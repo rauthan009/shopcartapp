@@ -29,7 +29,7 @@ function refreshList(){
                 sum+=(price*qty);
                 $('#Products').append( 
                     `<tr>
-                    <td>${todo.product.name}</td> <td>${todo.product.price}</td> <td>${todo.qty}</td> <td>${todo.product.vendor.name}</td><td><input type='submit' value='X' onclick='deleteElement(${todo.id})'></td>
+                    <td>${todo.product.name}</td> <td>${todo.product.price}</td> <td>${todo.qty}</td> <td>${todo.product.vendor.name}</td><td><input type='submit' value='X' class="btn btn-danger" onclick='deleteElement(${todo.id})'></td>
                     </tr>`
                     )
             }

@@ -17,7 +17,7 @@ $(()=>{
                     for(let todo of data){
                         $('#Products').append( 
                             `<tr>
-                            <td>${todo.name}</td> <td>${todo.price}</td> <td>${todo.qty}</td> <td>${todo.vendor.name}</td><td><input type='submit' value='X' onclick='deleteElement(${todo.id})'></td>
+                            <td>${todo.name}</td> <td>${todo.price}</td> <td>${todo.qty}</td> <td>${todo.vendor.name}</td><td><input type='submit' value='X' class="btn btn-danger" onclick='deleteElement(${todo.id})'></td>
                             </tr>`
                             )
                     }
@@ -44,7 +44,7 @@ function deleteElement(id)
                     {
                         $('#Products').append( 
                 `<tr>
-                <td>${products.name}</td> <td>${products.price}</td> <td>${products.qty}</td> <td>${products.vendor.name}</td><td><input type='submit' value='Delete' onclick='deleteElement(${products.id})'></td>
+                <td>${products.name}</td> <td>${products.price}</td> <td>${products.qty}</td> <td>${products.vendor.name}</td><td><input type='submit' class="btn btn-danger" value='Delete' onclick='deleteElement(${products.id})'></td>
                 </tr>`
                 )
                     }
@@ -62,7 +62,7 @@ function refreshList()
             for(let products of data){
                 $('#Products').append( 
                     `<tr>
-                    <td>${products.name}</td> <td>${products.price}</td> <td>${products.qty}</td> <td>${products.vendor.name}</td><td><input type='submit' value='Delete' onclick='deleteElement(${products.id})'></td>
+                    <td>${products.name}</td> <td>${products.price}</td> <td>${products.qty}</td> <td>${products.vendor.name}</td><td><input type='submit' class="btn btn-danger" value='Delete' onclick='deleteElement(${products.id})'></td>
                     </tr>`
                     )
             }
