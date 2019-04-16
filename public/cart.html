@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="Scripts/jquery.js"></script>
+    <script src="Scripts/myCart.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/common.css">
+
+
+</head>
+<body>
+        <header>
+                <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                  <ul class="navbar-nav">
+                      <li class="nav-item ">
+                          <a class="nav-link" href="./index.html">Shopping App</a>
+                        </li>
+                    <li class="nav-item ">
+                      <a class="nav-link" href="./vendors.html">Vendors</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./shopping.html">Shopping</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="./cart.html">MyCart</a>
+                    </li>
+                  </ul>
+                </nav>
+              </header>
+            
+    <div class="container">
+            <label>Name</label>
+            <input type="text" placeholder="enter your name" id="name" required>
+            <br>
+            <label>Email</label>
+            <input type="email" placeholder="enter your email" id="email" required>
+            <button id="login">Login</button>
+    <h3>Products in Cart:</h3>
+    <br>
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr>
+                <td>NAME</td>
+                <td>PRICE</td>
+                <td>Quantity</td>
+                <td>Vendor Name</td>
+                <td>OPTION</td>
+            </tr>
+        </thead>
+        <tbody id="Products">
+
+        </tbody>
+    </table> 
+</div>
+</body>
+</html>
