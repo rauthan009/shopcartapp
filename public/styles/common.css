@@ -8,17 +8,18 @@ body {
 .container-main {
     margin: auto;
     background-image: url('../bg.jpg');
+    height: 100%;
     background-repeat: no-repeat;
     background-position: center;
     padding: 10px;
-    height: 100%;
 
 }
 
 footer {
+    
     bottom: 0;
     width: 100%;
-    background-color: #dddddd;
+    background-color: #ffffff;
     color: rgb(105, 105, 105);
     height: 2em;
     text-align: right;
@@ -26,9 +27,10 @@ footer {
 }
 
 .container {
-    margin-top: 10px;
     background: white;
     padding: 5px 10px;
     border-radius: 5px;
+    padding-top:5px;
     padding-bottom: 2.5rem;
+    margin: 0 auto;
 }
